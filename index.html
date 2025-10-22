@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NewtonXBot — Smarter Investing, Join Our WhatsApp Group</title>
+  <meta name="description" content="NewtonXBot: AI co‑pilot for data‑driven trading. Join the WhatsApp group to get demos, updates, and community tips." />
+  <meta name="theme-color" content="#6f3cff" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="NewtonXBot — AI Trading Co‑pilot" />
+  <meta property="og:description" content="Join our WhatsApp group for demos, signal samples, and updates." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/120029/ffffff&text=NewtonXBot" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%236f3cff"/><text x="50%" y="54%" text-anchor="middle" font-size="28" font-family="monospace" fill="white">&lt;/&gt;</text></svg>' />
+
+  <style>
+    :root {
+      --bg-1: #0b0b12;           /* near-black */
+      --bg-2: #151628;           /* deep indigo */
+      --brand: #7c3aed;          /* purple */
+      --brand-2: #22d3ee;        /* cyan accent */
+      --text: #e9e9f2;           /* light text */
+      --muted: #a6a7c0;          /* secondary text */
+      --glass: rgba(255,255,255,.06);
+      --border: rgba(255,255,255,.14);
+      --ok: #25D366;             /* WhatsApp green */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; color: var(--text); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 70% -10%, rgba(124,58,237,.35), transparent 60%),
+                  radial-gradient(900px 500px at -10% 10%, rgba(34,211,238,.20), transparent 60%),
+                  linear-gradient(180deg, var(--bg-1), var(--bg-2));
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0 6px; 
+    }
+    .mark {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-weight: 700; letter-spacing: .5px; font-size: clamp(20px, 3.2vw, 28px);
+      color: white;
+      padding: 10px 14px; border: 1px solid var(--border); border-radius: 14px; background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      box-shadow: 0 0 0 1px rgba(255,255,255,.04) inset, 0 16px 40px rgba(124,58,237,.25);
+    }
+
+    .hero { position: relative; padding: 72px 0 42px; text-align: center; }
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 56px); line-height: 1.1; margin: 0 0 14px; font-weight: 800;
+    }
+    .hero p { color: var(--muted); margin: 0 auto 28px; max-width: 760px; font-size: clamp(16px, 2.2vw, 18px); }
+
+    .cta-wrap { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .cta {
+      --shadow: 0 12px 32px rgba(37, 211, 102, .28), 0 2px 0 rgba(0,0,0,.10) inset;
+      display: inline-flex; align-items: center; gap: 10px; padding: 16px 22px; border-radius: 14px; 
+      background: var(--ok); color: #04240f; font-weight: 800; text-decoration: none; font-size: clamp(16px, 2.4vw, 18px);
+      box-shadow: var(--shadow); transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+    }
+    .cta:hover { transform: translateY(-1px); filter: saturate(1.05); box-shadow: 0 16px 36px rgba(37,211,102,.35); }
+    .cta:active { transform: translateY(0); }
+
+    .chip { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 10px; color: var(--text); border: 1px solid var(--border); background: var(--glass); font-weight: 600; }
+
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(12, 1fr); margin-top: 48px; }
+    .card { grid-column: span 12; padding: 18px; border: 1px solid var(--border); background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border-radius: 16px; }
+    .card h3 { margin: 6px 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+    .card svg { opacity: .9; }
+
+    @media (min-width: 780px) {
+      .card { grid-column: span 4; padding: 22px; }
+    }
+
+    .disclaimer { margin: 34px auto 10px; color: #c1c2d6; opacity: .75; font-size: 13px; max-width: 860px; }
+
+    footer { text-align: center; padding: 32px 0 18px; color: var(--muted); font-size: 14px; }
+
+    /* subtle animated orbs */
+    .orb { position: absolute; inset: 0; pointer-events: none; }
+    .orb::before, .orb::after {
+      content: ""; position: absolute; width: 580px; height: 580px; border-radius: 50%; filter: blur(90px); opacity: .35; mix-blend-mode: screen;
+      background: radial-gradient(circle at 30% 30%, rgba(124,58,237,.85), transparent 60%);
+      animation: float 16s ease-in-out infinite;
+    }
+    .orb::after { left: auto; right: -120px; top: 20%; background: radial-gradient(circle at 70% 70%, rgba(34,211,238,.75), transparent 60%); animation-duration: 18s; }
+    @keyframes float { 0%,100%{ transform: translateY(-12px);} 50%{ transform: translateY(10px);} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="mark" aria-label="NewtonXBot brand">&lt;newtonxbot/&gt;</div>
+      <a href="#join" class="chip" aria-label="Skip to join button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" fill="#25D366"/><path d="M9.7 7.8c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.3 2 3.1 4.9 4.2 2.4 1 2.9.8 3.4.8s1.7-.7 1.9-1.3c.2-.6.2-1.2.1-1.3-.1-.1-.2-.2-.5-.3-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.8.3-.3.4-1 .9-1.2 1-.2.1-.4.1-.7 0-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.9-1.7-2.2-.2-.4 0-.6.1-.7.1-.1.3-.3.4-.4.1-.1.1-.3.2-.5 0-.2 0-.4 0-.5 0-.1-.5-1.2-.7-1.6Z" fill="#fff"/></svg>
+        Join
+      </a>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="orb" aria-hidden="true"></div>
+      <h1>Trade with data, not guesses.</h1>
+      <p>NewtonXBot is your AI co‑pilot for markets—signals you can inspect, quick backtests, and clear risk checks. Join our WhatsApp community for demos, Q&A, and updates.</p>
+      <div class="cta-wrap" id="join">
+        <a id="wa-btn" class="cta" href="#" target="_blank" rel="noopener" aria-label="Join the WhatsApp group">
+          <!-- WhatsApp logo -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" fill="#fff" opacity=".22"/><path d="M16.8 7.2A4.8 4.8 0 0 1 21.6 12 9.6 9.6 0 1 1 12 2.4 4.8 4.8 0 0 1 16.8 7.2Z" fill="#25D366"/><path d="M9.8 7.8c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.3 2 3.1 4.9 4.2 2.4 1 2.9.8 3.4.8s1.7-.7 1.9-1.3c.2-.6.2-1.2.1-1.3-.1-.1-.2-.2-.5-.3-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.8.3-.3.4-1 .9-1.2 1-.2.1-.4.1-.7 0-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.9-1.7-2.2-.2-.4 0-.6.1-.7l.4-.4c.1-.1.1-.3.2-.5 0-.2 0-.4 0-.5 0-.1-.5-1.2-.7-1.6Z" fill="#fff"/></svg>
+          Join WhatsApp Group (Free)
+        </a>
+        <small class="muted" style="color:var(--muted)">Opens WhatsApp to join our community</small>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Highlights">
+      <article class="card">
+        <h3>Transparent Signals</h3>
+        <p>See the logic behind each call. We keep it explainable—no black boxes.</p>
+      </article>
+      <article class="card">
+        <h3>Quick Backtests</h3>
+        <p>Ask for historical stats (win rate, drawdown, CAGR) in seconds.</p>
+      </article>
+      <article class="card">
+        <h3>Risk‑first Mindset</h3>
+        <p>Position sizing and protections are built into the workflow.</p>
+      </article>
+    </section>
+
+    <p class="disclaimer">Educational content only. Not financial advice. Markets involve risk; past performance does not guarantee future results.</p>
+    <footer>© <span id="year"></span> NewtonXBot • <a href="#top" style="color:var(--brand-2); text-decoration: none;">Back to top</a></footer>
+  </div>
+
+  <script>
+    // === CONFIGURE THIS BEFORE DEPLOY ===
+    // Put your WhatsApp GROUP invite link here (e.g., https://chat.whatsapp.com/XXXXXXXXXXXXXXX)
+    const WA_GROUP_LINK = "https://chat.whatsapp.com/LPfzJdzMORBImZE1YJg6fQ"; // <-- CHANGE ME
+
+    // Optional: add UTM parameters for basic tracking
+    const UTM = new URLSearchParams({ utm_source: 'landing', utm_medium: 'button', utm_campaign: 'wa_group' });
+
+    const btn = document.getElementById('wa-btn');
+    try {
+      const url = new URL(WA_GROUP_LINK);
+      url.search = url.search ? url.search + '&' + UTM.toString() : UTM.toString();
+      btn.href = url.toString();
+    } catch (e) {
+      // If the link is invalid, keep the button disabled-ish
+      btn.href = '#';
+      btn.setAttribute('aria-disabled', 'true');
+      btn.style.filter = 'grayscale(0.5)';
+      btn.title = 'Replace WA_GROUP_LINK in the source with a valid WhatsApp group invite link';
+    }
+
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
